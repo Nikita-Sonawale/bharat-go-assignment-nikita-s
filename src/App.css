@@ -1,0 +1,77 @@
+/* === Product Grid Container === */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* === Individual Product Card === */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+  max-width: 220px;
+}
+.product-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+/* === Product Image === */
+.product-card img {
+  width: 100%;
+  /* max-height: 200px; */
+  object-fit: contain;
+  margin-bottom: 10px;
+
+}
+
+/* === Product Info === */
+.product-card h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+  height: 40px;
+  overflow: hidden;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+.product-card .price {
+  font-weight: bold;
+  color: #b12704;
+  margin-bottom: 10px;
+}
+
+/* === Details Link === */
+.product-card a {
+  background-color: #ffd814;
+  color: #111;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: auto;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.product-card a:hover {
+  background-color: #f7ca00;
+}
